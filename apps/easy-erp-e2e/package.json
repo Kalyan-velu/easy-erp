@@ -1,0 +1,26 @@
+{
+  "name": "@easy-erp/easy-erp-e2e",
+  "version": "0.0.1",
+  "private": true,
+  "nx": {
+    "implicitDependencies": [
+      "@easy-erp/easy-erp"
+    ],
+    "targets": {
+      "e2e": {
+        "executor": "@nx/jest:jest",
+        "outputs": [
+          "{projectRoot}/test-output/jest/coverage"
+        ],
+        "options": {
+          "jestConfig": "apps/easy-erp-e2e/jest.config.ts",
+          "passWithNoTests": true
+        },
+        "dependsOn": [
+          "@easy-erp/easy-erp:build",
+          "@easy-erp/easy-erp:serve"
+        ]
+      }
+    }
+  }
+}
