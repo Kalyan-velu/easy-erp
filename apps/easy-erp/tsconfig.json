@@ -4,6 +4,9 @@
   "include": [],
   "references": [
     {
+      "path": "../../libs/erp-schemas"
+    },
+    {
       "path": "./tsconfig.app.json"
     },
     {

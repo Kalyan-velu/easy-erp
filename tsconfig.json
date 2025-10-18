@@ -8,6 +8,9 @@
     },
     {
       "path": "./apps/easy-erp"
+    },
+    {
+      "path": "./libs/erp-schemas"
     }
   ]
 }
